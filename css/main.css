@@ -1,0 +1,240 @@
+html, body {
+	color: white;
+	margin: 0;
+  	padding: 0;
+	width: 100%;
+	height: 100%;
+  	font-size: 16px;
+    box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	background-image: url('../img/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+	flex-direction: column;
+	justify-content: space-between;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.divider {
+    width: 100%;
+    height: .8px; /* Adjust the height of the HR element as per your requirement */
+    border: none; /* Remove the default border */
+    background-image: linear-gradient(to right, #5ddfff, #3722ff);
+}
+
+/* TOP */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 9%;
+}
+
+.top > img {
+    /* Style for "Logo 1" */
+    width: 288px;
+    height: 83px;
+}
+
+.apply-button {
+    /* Style for "Retângulo" */
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 27px;
+    background-color: #00c0ff;
+
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22.3px;
+    text-align: center;
+}
+
+/* TOP END */
+
+
+/* MIDDLE */
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+}
+
+.middle-top {
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    width: 100%;
+}
+
+.middle-top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 15%;
+    min-width: 65%;
+    height: 100%;
+}
+
+.heartbeats {
+    padding-left: 10%;
+    max-width: 423px;
+    height: 59px;
+    width: auto;
+}
+
+.title-description {
+    /* Style for "Boost Your" */
+    width: 904px;
+    height: 276px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 50px;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 102px;
+    text-align: left;
+    /* Text style for "Boost Your" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.description {
+    /* Style for "As one of" */
+    width: auto;
+    height: 84px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29.95px;
+    text-align: left;
+    /* Text style for "As one of" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.middle-top-right {
+    min-width: 35%;
+    height: 100%;
+    overflow: visible;
+}
+
+.middle-top-right > img {
+    width: 100%;
+    height: 100%;
+}
+
+.middle-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.middle-bottom > .clients-img {
+    min-height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 1343px;
+    height: 109px;
+}
+
+.middle-bottom > .clients-img > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    min-width: 230px;
+    height: 109px;
+}
+
+.svg {
+    filter: brightness(0) invert(1);
+    width: auto;
+}
+
+.middle-bottom > .clients-title {
+    display: flex;
+    align-items: center;
+    min-height: 30%;
+}
+
+.middle-bottom > div > span {
+    /* Style for "Sirius Cli" */
+    padding-top: 0px;
+    width: 296px;
+    height: 30px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 35.75px;
+    text-align: center;
+    /* Text style for "Sirius Cli" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+/* MIDDLE END */
+
+
+/* BOTTOM */
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8%;  
+}
+
+.bottom-text {
+    /* Style for "Sirius Res" */
+    width: 372px;
+    height: 60px;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 35px;
+    text-align: center;
+    /* Text style for "Sirius Res" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+/* BOTTOM END */
