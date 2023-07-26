@@ -1,28 +1,28 @@
 html, body {
 	color: white;
-	margin: 0;
-  	padding: 0;
-	width: 100%;
-	height: 100%;
+	margin: 0px !important;
+  	padding: 0px !important;
+	width: 100% !important;
+	height: 100% !important;
   	font-size: 16px;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
+    background-color: black;
 }
 
 .container {
+    box-sizing: border-box !important;
+    height: 100%;
 	display: flex;
-	background-image: url('../img/background.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+	/*background-image: url('https://ik.imagekit.io/sirzarakikenpachi/website-fundo.jpg?updatedAt=1690354222489');*/
 	
 	flex-direction: column;
 	justify-content: space-between;
+    align-items: center;
 
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;
-    height: 100%;
 }
 
 .divider {
@@ -35,6 +35,7 @@ html, body {
 /* TOP */
 .top {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     min-height: 9%;
@@ -90,7 +91,6 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding-left: 15%;
     min-width: 65%;
     height: 100%;
 }
@@ -139,6 +139,7 @@ html, body {
 }
 
 .middle-top-right {
+    box-sizing: border-box;
     min-width: 35%;
     height: 100%;
     overflow: visible;
@@ -215,8 +216,9 @@ html, body {
 /* BOTTOM */
 .bottom {
     display: flex;
+    width: 100%;
     justify-content: space-around;
-    align-items: center;
+    align-items: end;
     min-height: 8%;  
 }
 
