@@ -24,8 +24,9 @@ html, body {
 }
 
 .divider {
-    width: 100%;
-    height: .8px; /* Adjust the height of the HR element as per your requirement */
+    padding: 0.5px;
+    width: 94%;
+    height: 0.1px; /* Adjust the height of the HR element as per your requirement */
     border: none; /* Remove the default border */
     background-image: linear-gradient(to right, #5ddfff, #3722ff);
 }
@@ -33,7 +34,8 @@ html, body {
 /* TOP */
 .top {
     display: flex;
-    width: 100%;
+    padding: 15px;
+    width: 94%;
     justify-content: space-between;
     align-items: center;
     min-height: 9%;
