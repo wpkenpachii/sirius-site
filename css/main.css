@@ -13,8 +13,6 @@ html, body {
     box-sizing: border-box !important;
     height: 100%;
 	display: flex;
-	/*background-image: url('https://ik.imagekit.io/sirzarakikenpachi/website-fundo.jpg?updatedAt=1690354222489');*/
-	
 	flex-direction: column;
 	justify-content: space-between;
     align-items: center;
