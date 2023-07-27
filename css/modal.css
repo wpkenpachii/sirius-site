@@ -46,13 +46,14 @@ margin: 0.4rem 0 0.2rem;
 button {
     cursor: pointer;
     border: none;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .btn {
+    font-family: 'Open Sans', sans-serif !important;
     display: inline-block;
     padding: 0.6rem 1.2rem;
-    font-weight: 700;
+    font-weight: 400;
     background-color: #00c0ff;
     color: black;
     border-radius: 5px;
