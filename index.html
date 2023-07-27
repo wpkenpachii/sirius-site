@@ -8,16 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title> Sirius </title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 <body>
     <div class="container">
         <section class="top">
             <img src="img/Logo-sirius-horizontal.png" alt="Sirius Logo Horizontal">
-            <form action="https://gzjqeajwgnb.typeform.com/to/YORLwHaW">
-                <button type="submit" class="apply-button"> Apply Now </button>
-            </form>
+            <button type="submit" class="apply-button btn-open"> Apply Now </button>
         </section>
         <div class="divider"></div>
         <section class="middle">
@@ -74,5 +76,66 @@
             </span>
         </section>
     </div>
+
+    <div class="overlay hidden"></div>
+    <section class="modal hidden">
+        <div class="flex">
+            <h3 style="color: white;">Contact Us!</h3>
+            <button class="btn-close">⨉</button>
+        </div>
+        <input type="text" id="fullname" placeholder="Your Name" />
+        <input type="email" id="email" placeholder="brendaneich@js.com" />
+        <input type="tel" id="phone">
+        <button class="btn"> Send </button>
+        <div class="alert alert-info" style="display: none;"></div>
+    </section>
+
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    
+        const info = document.querySelector(".alert-info");
+        function process(event) {
+          event.preventDefault();
+          const phoneNumber = phoneInput.getNumber();
+          info.style.display = "";
+          info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+        }
+
+        // MODAL
+        const modal = document.querySelector(".modal");
+        const overlay = document.querySelector(".overlay");
+        const openModalBtn = document.querySelector(".btn-open");
+        const closeModalBtn = document.querySelector(".btn-close");
+
+        // close modal function
+        const closeModal = function () {
+        modal.classList.add("hidden");
+        overlay.classList.add("hidden");
+        };
+
+        // close the modal when the close button and overlay is clicked
+        closeModalBtn.addEventListener("click", closeModal);
+        overlay.addEventListener("click", closeModal);
+
+        // close modal when the Esc key is pressed
+        document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+            closeModal();
+        }
+        });
+
+        // open modal function
+        const openModal = function () {
+        modal.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+        };
+        // open modal event
+        openModalBtn.addEventListener("click", openModal);
+
+      </script>
 </body>
 </html>
