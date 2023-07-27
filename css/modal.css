@@ -24,6 +24,17 @@ body {
     border-radius: 15px;
 }
 
+.modal > form {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+}
+
 .modal .flex {
 display: flex;
 align-items: center;
