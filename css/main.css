@@ -160,7 +160,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     min-width: 1343px;
     height: 109px;
 }
@@ -182,7 +182,7 @@ html, body {
 
 .middle-bottom > .clients-title {
     display: flex;
-    align-items: center;
+    align-items: start;
     min-height: 30%;
 }
 
@@ -219,12 +219,13 @@ html, body {
 .bottom-text {
     /* Style for "Sirius Res" */
     width: 372px;
-    height: 60px;
+    min-height: 40px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
+    padding-bottom: 10px;
 }
 /* BOTTOM END */
