@@ -12,7 +12,6 @@ html, body {
 
 html, body, .container {
     max-width: 100%;
-    overflow-x: hidden !important;
     margin-left: 0 !important;
 }
 
