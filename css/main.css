@@ -39,10 +39,16 @@ html, body {
     min-height: 9%;
 }
 
-.top > img {
+.logo { flex-grow: 1;}
+.logo > img {
     /* Style for "Logo 1" */
     width: 288px;
-    height: 83px;
+}
+
+.logo-apply-btn {
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
 }
 
 .apply-button {
@@ -60,6 +66,18 @@ html, body {
     font-family: "Open Sans";
 }
 
+@media only screen
+and (max-device-width : 800px)
+{
+    .logo-apply-btn {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
 /* TOP END */
 
 
@@ -81,14 +99,15 @@ html, body {
     justify-content: space-between;
     height: 70%;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .middle-top-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 2;
     align-items: start;
-    min-width: 65%;
     height: 100%;
 }
 
@@ -101,19 +120,19 @@ html, body {
 
 .title-description {
     /* Style for "Boost Your" */
-    width: 904px;
     height: 276px;
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 50px;
-    flex-wrap: wrap;
     font-weight: 700;
     font-style: normal;
     text-align: left;
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
+    text-align: start;
 }
+
 .description {
     /* Style for "As one of" */
     width: auto;
@@ -132,26 +151,43 @@ html, body {
     line-height: normal;
 }
 
+@media only screen
+and (max-device-width : 1467px)
+{
+    .title-description, .description {
+        text-align: center;
+    }
+
+    .middle-top-left {
+        align-items: center;
+    }
+
+    .middle-top-right {
+        display: none;
+    }
+}
+
+
 .apply-btn {
     box-sizing: border-box;
-    width: 100%;
     display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: end;
-    padding-right: 15%;
+    justify-content: space-around;
+    padding: 20px 0px;
+    padding-top: 10px;
     align-items: center;
 }
 
 .middle-top-right {
+    flex-grow: 1;
     box-sizing: border-box;
-    min-width: 35%;
     height: 100%;
-    overflow: visible;
+    /* overflow: visible; */
 }
 
 .middle-top-right > img {
-    width: 100%;
-    height: 100%;
+    
 }
 
 .middle-bottom {
@@ -159,7 +195,7 @@ html, body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 30%;
+    /* height: 30%; */
     width: 100%;
     margin-bottom: 0px;
 }
@@ -171,8 +207,7 @@ html, body {
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    min-width: 1343px;
-    height: 109px;
+    flex-wrap: wrap;
 }
 
 .middle-bottom > .clients-img > div {
@@ -180,20 +215,15 @@ html, body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    min-width: 230px;
-    height: 109px;
-}
-
-.svg {
-    filter: brightness(0) invert(1);
-    width: auto;
+    flex-grow: 2;
+    min-width: 250px;
+    min-height: 110px;
 }
 
 .middle-bottom > .clients-title {
     display: flex;
     align-items: start;
-    min-height: 30%;
+    flex-grow: 1;
 }
 
 .middle-bottom > div > span {
@@ -215,6 +245,11 @@ html, body {
     line-height: normal;
 }
 /* MIDDLE END */
+
+.svg {
+    filter: brightness(0) invert(1);
+    width: auto;
+}
 
 
 /* BOTTOM */
