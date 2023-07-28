@@ -23,7 +23,11 @@ html, body, .container {
 	flex-direction: column;
 	justify-content: space-between;
     align-items: center;
+    overflow: hidden !important;
+}
 
+body {
+    overflow: hidden !important;
 }
 
 .divider {
