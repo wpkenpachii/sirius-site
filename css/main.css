@@ -193,10 +193,6 @@ and (max-device-width : 1467px)
     .middle-bottom {
         display: none !important;
     }
-
-    .modal {
-        width: 350px;
-    }
 }
 
 
