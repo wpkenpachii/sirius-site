@@ -28,7 +28,7 @@ body {
 and (max-device-width : 1467px)
 {
     .modal {
-        width: 350px;
+        width: 350px !important;
     }
 }
 
