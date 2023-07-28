@@ -10,6 +10,12 @@ html, body {
     font-family: 'Open Sans', sans-serif !important;
 }
 
+html, body, .container {
+    max-width: 100%;
+    overflow-x: hidden !important;
+    margin-left: 0 !important;
+}
+
 .container {
     box-sizing: border-box !important;
     height: 100%;
