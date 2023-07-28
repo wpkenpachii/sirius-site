@@ -157,6 +157,7 @@ and (max-device-width : 1467px)
     .middle {
         padding-left: 0px;
         padding-right: 0px;
+        justify-content: center;
     }
 
     .title-description {
@@ -189,8 +190,12 @@ and (max-device-width : 1467px)
         display: none;
     }
 
-    .middle-bottom > .clients-img {
-        flex-direction: column;
+    .middle-bottom {
+        display: none !important;
+    }
+
+    .modal {
+        width: 350px;
     }
 }
 
